@@ -44,5 +44,10 @@
 		</c:forEach>
 		</tbody>
 	</table>
+	<script>
+	// JSP -> Servlet -> java => html -> css -> javascript
+	let msg = `${result}`;
+	if(msg != '') alert(msg);
+	</script>
 </body>
 </html>
