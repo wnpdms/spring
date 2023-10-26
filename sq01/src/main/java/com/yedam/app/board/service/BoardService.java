@@ -14,7 +14,7 @@ public interface BoardService {
 	public int insertBoard(BoardVO boardVO);
 	
 	// 수정 (대상 : title, contents, writer, updatedate, image)
-	public int updateBoard(BoardVO boardVO);
+	public Map<String, Object> updateBoard(BoardVO boardVO);
 	
 	// 삭제 (조건 : bno)
 	public int deleteBoard(int boardNo);

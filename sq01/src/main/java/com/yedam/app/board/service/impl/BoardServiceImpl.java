@@ -19,12 +19,12 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Override
 	public List<BoardVO> selectBoardList() {
-		return boardMapper.getBoardList();
+		return boardMapper.selectBoardList();
 	}
 
 	@Override
 	public BoardVO selectBoard(BoardVO boardVO) {
-		return boardMapper.getBoard(boardVO);
+		return boardMapper.selectBoard(boardVO);
 	}
 
 	@Override

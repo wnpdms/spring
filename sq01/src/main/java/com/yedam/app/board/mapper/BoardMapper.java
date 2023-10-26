@@ -7,10 +7,10 @@ import com.yedam.app.board.service.BoardVO;
 
 public interface BoardMapper {
 	// 전체
-	public List<BoardVO> getBoardList();
+	public List<BoardVO> selectBoardList();
 	
 	// 단건 (조건 : bno)
-	public BoardVO getBoard(BoardVO boardVO);
+	public BoardVO selectBoard(BoardVO boardVO);
 	
 	// 등록 (대상 : bno(selectkey), title, contents, writer, image)
 	public int insertBoard(BoardVO boardVO);
